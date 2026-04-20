@@ -3,9 +3,7 @@ package com.adepthshar.pokescanner
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.lifecycle.viewmodel.compose.viewModel
-import com.adepthshar.pokescanner.ui.MainScreen
-import com.adepthshar.pokescanner.viewmodel.MainViewModel
+import com.adepthshar.pokescanner.ui.screen.MainScreen
 
 class MainActivity : ComponentActivity() {
 
@@ -13,8 +11,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            val vm: MainViewModel = viewModel()
-            MainScreen(vm)
+            MainScreen()
         }
     }
 }
