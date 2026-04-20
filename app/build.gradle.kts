@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.android")
-    id("com.google.devtools.ksp")
+    id("org.jetbrains.kotlin.android") version "1.9.22"
+    id("com.google.devtools.ksp") version "1.9.22-1.0.16"
 }
 
 android {
@@ -33,7 +33,6 @@ android {
         jvmTarget = "17"
     }
 }
-
 dependencies {
 
     // Core
@@ -57,8 +56,8 @@ dependencies {
     implementation("androidx.camera:camera-view:1.3.1")
 
     // Retrofit
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
 
     // Room
     implementation("androidx.room:room-runtime:2.6.1")
