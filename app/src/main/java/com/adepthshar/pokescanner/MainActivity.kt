@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.adepthshar.pokescanner.screens.MainScreen
+import com.adepthshar.pokescanner.ui.MainScreen
 import com.adepthshar.pokescanner.viewmodel.MainViewModel
 
 class MainActivity : ComponentActivity() {

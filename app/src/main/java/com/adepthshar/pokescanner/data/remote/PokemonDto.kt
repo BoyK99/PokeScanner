@@ -1,8 +1,10 @@
+package com.adepthshar.pokescanner.data.remote
+
 data class PokemonResponse(
-    val data: List<PokemonCard>
+    val data: List<PokemonCardDto>
 )
 
-data class PokemonCard(
+data class PokemonCardDto(
     val id: String,
     val name: String,
     val images: Images,

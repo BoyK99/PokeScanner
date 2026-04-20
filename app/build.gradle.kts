@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.android") version "1.9.22"
-    id("com.google.devtools.ksp") version "1.9.22-1.0.16"
+    id("org.jetbrains.kotlin.android")
+    id("com.google.devtools.ksp") // ❌ NO version here
 }
 
 android {
@@ -29,8 +29,8 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
+    kotlin {
+        jvmToolchain(17)
     }
 }
 dependencies {
