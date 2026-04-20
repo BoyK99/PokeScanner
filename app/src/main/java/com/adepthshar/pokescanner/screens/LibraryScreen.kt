@@ -1,3 +1,5 @@
+package com.adepthshar.pokescanner
+
 @Composable
 fun LibraryScreen(cards: List<CardEntity>) {
     LazyColumn {
